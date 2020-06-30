@@ -42,4 +42,6 @@ USER root
 # COPY entry.sh /bin
 # RUN mkdir -p /home/jovyan/.irods
 
+COPY fentry.sh /bin
+
 ENTRYPOINT ["bash", "/bin/fentry.sh"]
